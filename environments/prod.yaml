@@ -1,0 +1,10 @@
+replicaCount: 3
+ingress:
+  host: service.example.com
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 12
+config:
+  APP_ENV: production
+  LOG_LEVEL: info
