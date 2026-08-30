@@ -1,0 +1,9 @@
+replicaCount: 1
+ingress:
+  host: service.dev.local
+resources:
+  requests: {cpu: 50m, memory: 32Mi}
+  limits: {cpu: 250m, memory: 128Mi}
+config:
+  APP_ENV: development
+  LOG_LEVEL: debug
